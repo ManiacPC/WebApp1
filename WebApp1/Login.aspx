@@ -12,37 +12,35 @@
 </head>
 <body>
     <div class="container">
-        <form id="form1" runat="server">
+        <form id="form1" runat="server" novalidate>
             <div class="row mt-5">
                 <div class="col-5 mx-auto">
                     <h2>Iniciar sesión <span class="badge badge-info">Genial</span></h2>
-                    <form method="get" class="needs-validation" novalidate>
                         <div class="form-group">
-                            <label for="usuario">Usuario:</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-user"></i></div>
-                                </div>
-                                <asp:TextBox ID="TxtUsuario" runat="server" required placeholder="Ingrese usuario" CssClass="form-control"></asp:TextBox>
-                                <div class="invalid-feedback">
-                                    Escriba un nombre de usuario
-                                </div>
+                        <label for="usuario">Usuario:</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-user"></i></div>
+                            </div>
+                            <asp:TextBox ID="TxtUsuario" runat="server" required placeholder="Ingrese usuario" CssClass="form-control"></asp:TextBox>
+                            <div class="invalid-feedback">
+                                Escriba un nombre de usuario
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="password">Contraseña:</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-key text-primary"></i></div>
-                                </div>
-                                <asp:TextBox ID="TxtPassword" type="password" CssClass="form-control" required placeholder="Ingrese su contraseña" runat="server"></asp:TextBox>
-                                <div class="invalid-feedback">
-                                    Escriba la contraseña
-                                </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-key text-primary"></i></div>
+                            </div>
+                            <asp:TextBox ID="TxtPassword" type="password" CssClass="form-control" required placeholder="Ingrese su contraseña" runat="server"></asp:TextBox>
+                            <div class="invalid-feedback">
+                                Escriba la contraseña
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
-                    </form>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
                 </div>
             </div>
         </form>
@@ -54,11 +52,10 @@
 <script src="./Resources/fontawesome-5.9.0/js/all.js"></script>
 <script>
     //$(document).ready(function() {
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function () {
         'use strict';
         window.addEventListener('load', function () {
-            var form = document.getElementsByClassName('needs-validation');
+            var form = document.getElementById('form1');
             form.addEventListener('submit', function (event) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();

@@ -4,8 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" href="./css/bootstrap-personalizado.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./Resources/css/bootstrap-personalizado.css">
+    <link rel="stylesheet" href="./Resources/css/style.css">
     <asp:ContentPlaceHolder ID="ContenidoEstilosAdicionales" runat="server"></asp:ContentPlaceHolder>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>

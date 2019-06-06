@@ -69,8 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Contacto.aspx" />
-    <Content Include="css\bootstrap-personalizado.css" />
-    <Content Include="css\style.css" />
+    <Content Include="Resources\css\bootstrap-personalizado.css" />
+    <Content Include="Resources\css\style.css" />
+    <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="Principal.Master" />
     <None Include="Web.Debug.config">
@@ -92,6 +93,13 @@
     </Compile>
     <Compile Include="Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
@@ -118,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\fontawesome-5.9.0\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

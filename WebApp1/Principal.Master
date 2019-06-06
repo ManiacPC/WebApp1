@@ -24,10 +24,10 @@
                     <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="./Contacto.aspx">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="./TestControles.aspx" tabindex="-1">Test Controles</a>
                 </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0">
@@ -38,9 +38,11 @@
     </nav>
 </header>
 <div class="container margin-body">
-    <asp:ContentPlaceHolder ID="ContenidoPagina" runat="server">
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContenidoPagina" runat="server">
         
-    </asp:ContentPlaceHolder>
+        </asp:ContentPlaceHolder>
+    </form>
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

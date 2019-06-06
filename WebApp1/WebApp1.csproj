@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Prueba.aspx" />
+    <Content Include="TestControles.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +107,13 @@
     </Compile>
     <Compile Include="Prueba.aspx.designer.cs">
       <DependentUpon>Prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestControles.aspx.cs">
+      <DependentUpon>TestControles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestControles.aspx.designer.cs">
+      <DependentUpon>TestControles.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

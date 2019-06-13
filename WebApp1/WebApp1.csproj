@@ -69,17 +69,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Contacto.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Inicio.aspx" />
     <Content Include="Resources\css\bootstrap-personalizado.css" />
     <Content Include="Resources\css\style.css" />
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="Principal.Master" />
+    <Content Include="NuevoSite.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Resources\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="TestValidacion.aspx" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Prueba.aspx" />
@@ -94,12 +102,29 @@
     <Compile Include="Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoSite.Master.cs">
+      <DependentUpon>NuevoSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NuevoSite.Master.designer.cs">
+      <DependentUpon>NuevoSite.Master</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
@@ -122,6 +147,13 @@
     </Compile>
     <Compile Include="TestControles.aspx.designer.cs">
       <DependentUpon>TestControles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestValidacion.aspx.cs">
+      <DependentUpon>TestValidacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestValidacion.aspx.designer.cs">
+      <DependentUpon>TestValidacion.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -7,16 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace WebApp1
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class NuevoSite : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            TxtPrueba.Text = "Hola mundo";
-        }
-
-        protected void BtnPrueba_OnClick(object sender, EventArgs e)
-        {
-            TxtPrueba.Text = "Bienvenido " + TxtUsuario.Text;
 
         }
     }

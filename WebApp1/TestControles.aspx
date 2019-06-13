@@ -3,6 +3,15 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContenidoPagina" runat="server">
+    <div class="mt-5">
+        <asp:Menu ID="MenuSitio" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2"></asp:Menu>
+        <asp:SiteMapDataSource runat="server" ID="SiteMapDataSource1"></asp:SiteMapDataSource>
+        <hr />
+    </div>
+    <div class="mt-5">
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+    </div>
+    
     <div class="text-center text-sm-right">
         <h1 class="text-uppercase">
             ¡Plop!

@@ -23,7 +23,7 @@
                                 <div class="input-group-text"><i class="fas fa-user"></i></div>
                             </div>
                             <asp:TextBox ID="TxtUsuario" runat="server" required placeholder="Ingrese usuario" CssClass="form-control"></asp:TextBox>
-                            <div class="invalid-feedback">
+                            <div class="invalid-tooltip">
                                 Escriba un nombre de usuario
                             </div>
                         </div>
@@ -35,12 +35,22 @@
                                 <div class="input-group-text"><i class="fas fa-key text-primary"></i></div>
                             </div>
                             <asp:TextBox ID="TxtPassword" type="password" CssClass="form-control" required placeholder="Ingrese su contraseña" runat="server"></asp:TextBox>
-                            <div class="invalid-feedback">
+                            <div class="invalid-tooltip">
                                 Escriba la contraseña
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
+                    <div class="form-group">
+                        <label for="campo-prueba">Campo prueba:</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-spider text-primary"></i></div>
+                            </div>
+                            <asp:TextBox ID="TxtPrueba" type="campo-prueba" CssClass="form-control" placeholder="Control de pruebas" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                    <asp:Button ID="BtnLogin" CssClass="btn btn-primary btn-lg" runat="server" Text="Iniciar sesión" type="submit" />
+                    <asp:Button ID="BtnPrueba" CssClass="btn btn-info btn-lg" runat="server" Text="Probar cambios de valores" OnClick="BtnPrueba_OnClick" />
                 </div>
             </div>
         </form>

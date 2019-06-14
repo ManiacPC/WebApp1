@@ -84,6 +84,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Resources\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="RevisarChinchillas.aspx" />
     <Content Include="TestValidacion.aspx" />
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
@@ -141,6 +142,13 @@
     <Compile Include="Prueba.aspx.designer.cs">
       <DependentUpon>Prueba.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RevisarChinchillas.aspx.cs">
+      <DependentUpon>RevisarChinchillas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RevisarChinchillas.aspx.designer.cs">
+      <DependentUpon>RevisarChinchillas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TestControles.aspx.cs">
       <DependentUpon>TestControles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +169,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\fontawesome-5.9.0\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApp1DAL\WebApp1DAL.csproj">
+      <Project>{b16e638f-3f39-43e4-b5b1-4bf662393db4}</Project>
+      <Name>WebApp1DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
